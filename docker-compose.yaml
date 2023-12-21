@@ -2,13 +2,13 @@ version: '3'
  
 services:
     apache_1:
-        container_name: apache_1
-        build: ./apache_one
+        container_name: microservice-one
+        build: ./microservice-one
         ports: 
           - 6060:80
     apache_2:
-        container_name: apache_2
-        build: ./apache_two
+        container_name: microservice-two
+        build: ./microservice-two
         ports:
           - 7070:80
         deploy:
